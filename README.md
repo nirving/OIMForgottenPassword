@@ -1,9 +1,13 @@
 OIMForgottenPassword
 ====================
 * cd to designconsole\lib
+<<<<<<< HEAD
   ```
   mvn install:install-file -Dfile=oimclient.jar -DgroupId=com.oracle.oim -DartifactId=client -Dversion=11.1.2.2.0 -Dpackaging=jar
   ```
+=======
+  mvn install:install-file -Dfile=oimclient.jar -DgroupId=com.oracle.oim -DartifactId=client -Dversion=11.1.2.2.0 -Dpackaging=jar
+>>>>>>> 4b12fb023b149bcf00352585760f7101309be926
 * cd to designconsile\ext
   mvn install:install-file -Dfile=jrf-api.jar -DgroupId=com.oracle.oim -DartifactId=jrf-api -Dversion=11.1.2.2.0 -Dpackaging=jar
   mvn install:install-file -Dfile=wlfullclient.jar -DgroupId=com.oracle.oim -DartifactId=wlfullclient -Dversion=11.1.2.2.0 -Dpackaging=jar
