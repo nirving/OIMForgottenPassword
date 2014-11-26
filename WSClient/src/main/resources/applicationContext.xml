@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oxm="http://www.springframework.org/schema/oxm"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/oxm http://www.springframework.org/schema/oxm/spring-oxm-1.5.xsd">
+
+	<bean id="passwordResetClient" class="com.darkedges.oim.credentials.client.PasswordReset">
+		<property name="defaultUri"
+			value="http://localhost:8080/CredentialsWSServer/services" />
+		<property name="marshaller" ref="jixbmarshaller" />
+		<property name="unmarshaller" ref="jixbmarshaller" />
+	</bean>
+	<oxm:jibx-marshaller id="jixbmarshaller"
+		target-class="local.darkedges.oim.schemas.QuestionsRequest" />
+</beans>
